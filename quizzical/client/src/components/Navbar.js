@@ -13,7 +13,6 @@ export const Navbar = () => {
   return (
     <div className="navbar" style={{ justifyContent: "space-around" }}>
       <Link to="/">Home</Link>
-      <Link to="/review">+ Add your song reviews</Link>
       {!cookies.access_token ? (
         <Link to="/auth">Login/Register</Link>
       ) : (
