@@ -1,27 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import axios from 'axios'; 
 import React, { useState, useEffect } from 'react';
-
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {FileUploader} from './components/FileUploader';
 
 function App() {
-  const [message, setMessage] = useState('');
-
-  useEffect(() => {
-    // Make a GET request to the backend when the component mounts
-    axios.get('http://localhost:3000/') // Replace with your server's URL
-      .then((response) => {
-        setMessage(response.data);
-      })
-      .catch((error) => {
-        console.error('Error making API request:', error);
-      });
-  }, []);
 
   return (
     <div className="App">
-      <p>Response from the server:</p>
-      <p>{message}</p>
+      <FileUploader/>
     </div>
   );
 }

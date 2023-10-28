@@ -10,4 +10,4 @@ app.get('/', (req, res) => {
     res.send('Hello from Express.js server!');
   });
 
-app.listen(3000, () => console.log("SERVER STARTEDDDD"));
+app.listen(3000, () => console.log("SERVER STARTED"));
