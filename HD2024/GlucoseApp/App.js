@@ -64,42 +64,6 @@ export default function App() {
     </NavigationContainer>
   );
 }
-/*
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: "#333333",
-          },
-        }}
-      >
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="Overall"
-          component={Main}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="Overall"
-          component={Main}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="Overall"
-          component={Main}
-        />
-        <Stack.Screen
-          options={{ headerShown: false }}
-          name="Overall"
-          component={Main}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
-*/
 const styles = StyleSheet.create({
   container: {
     flex: 1,

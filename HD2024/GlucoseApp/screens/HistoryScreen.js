@@ -3,7 +3,7 @@ import React from 'react'
 
 const HistoryScreen = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>HistoryScreen</Text>
     </View>
   )
@@ -11,4 +11,10 @@ const HistoryScreen = () => {
 
 export default HistoryScreen
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    }
+})
