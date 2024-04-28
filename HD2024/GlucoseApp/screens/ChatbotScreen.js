@@ -27,7 +27,7 @@ const ChatbotScreen = () => {
 
       const prompt = "Hello.";
 
-      const result = await model.generateContent(prompt);
+      const result = await model.generateContent("Please provide your answer in the context of medicine and diabetes knowledge. "+prompt);
       const response = result.response;
       const text = response.text();
       console.log(text);
@@ -95,7 +95,7 @@ export default ChatbotScreen;
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#474F7A" },
   messageContainer: { padding: 10, marginVertical: 5 },
-  messageText: { fontSize: 16 },
+  messageText: { fontSize: 16, color: 'white' },
   inputContainer: { flexDirection: "row", alignItems: "center", padding: 10 },
   input: {
     flex: 1,
